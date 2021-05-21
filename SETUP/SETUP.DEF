@@ -1,0 +1,34 @@
+NAME        ICSSetup
+DESCRIPTION 'ICS Windows Application Installer'
+STUB        'WinStub.exe'
+EXETYPE     WINDOWS
+
+;Segments must be NONDISCARDABLE so that Windows will not attempt to
+;load a segment after the user has swapped diskettes.
+; I changed this to work better on 286 systems - this is a 1 diskette install.
+CODE        MOVEABLE DISCARDABLE
+DATA        MOVEABLE MULTIPLE PRELOAD
+HEAPSIZE    1024
+
+SEGMENTS
+	SETUP_TEXT
+	SETUPDLG_TEXT
+	SETUPINF_TEXT
+	SETUPPM_TEXT
+	ICMETER_TEXT
+	ICCUSTOM_TEXT
+	ICCANVAS_TEXT
+	ICSTATIC_TEXT
+	_TEXT   PRELOAD
+
+EXPORTS
+	StatusDlgProc       @1
+	WelcomeDlgProc      @2
+	InsertDiskDlgProc   @3
+	DDEClientWndProc    @4
+	ICSMeter_WndProc    @5
+	ICSCanvas_WndProc   @6
+	GroupDlgProc        @7
+	NuGrpDlg            @8
+	ExcludeSibRectCallBack      @9
+	ICSStatic_WndProc   @10

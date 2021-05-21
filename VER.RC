@@ -1,0 +1,27 @@
+#include <ver.h>
+
+VS_VERSION_INFO VERSIONINFO 
+FILEVERSION 2, 01, 0, 0
+PRODUCTVERSION 2, 01, 0, 0
+FILEFLAGSMASK VS_FF_DEBUG | VS_FF_PRERELEASE | VS_FF_PATCHED | VS_FF_PRIVATEBUILD | VS_FF_INFOINFERRED | VS_FF_SPECIALBUILD
+FILEOS VOS__WINDOWS16
+FILETYPE VFT_APP
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4"
+		BEGIN
+			VALUE "CompanyName", "Inner-City Software\000"
+			VALUE "FileDescription", "GrpIcon - Predecessor to Program Manager's Assistant\000"
+			VALUE "FileVersion", "2.01\000"
+			VALUE "InternalName", "GRPICON.EXE\000"
+			VALUE "LegalCopyright", "Copyright © Inner-City Software 1991-1993\000"
+			VALUE "LegalTrademarks", "GrpIcon is a trademark of Inner-City Software - bite it and you will get smoked by the ghetto-style programmers!\000"
+			VALUE "OriginalFilename", "GRPICON.EXE\000"
+			VALUE "ProductName", "GrpIcon\000"
+			VALUE "ProductVersion", "2.01\000"
+		END
+
+	END
+
+END

@@ -1,0 +1,39 @@
+[OPTIONS]
+ERRORLOG=F:\GRPICON\HELP\GRPICON.err
+CONTENTS=HelpContents1
+ROOT=F:\GRPICON\HELP
+COMPRESS=MEDIUM
+TITLE=GrpIcon Help
+BMROOT=F:\GRPICON\HELP\BITMAPS
+REPORT=ON
+COPYRIGHT=© 1992-1993 Inner-City Software
+[FILES]
+GRPICON.RTF
+[MAP]
+HelpContents1	1	; Help Contents
+GrpIcon2.01.2	38	; GrpIcon 2.01
+Installation.3	2	; Installation
+StartingGrpIcon.4	3	; Starting GrpIcon
+HowtoUseGrpIcon.5	4	; How to Use GrpIcon
+ModifyingOptions.6	5	; Modifying Options
+ChangingStartupConfigurations.7	15	; Changing Startup Configurations
+ChangingGroupPropertiesMenuFonts.8	22	; Changing Group Properties Menu Fonts
+ChangingGroupPropertiesMenuIconSize.9	23	; Changing Group Properties Menu Icon Size
+On.lineHelp.10	6	; On-line Help
+RegisteringGrpIcon.11	39	; Using GrpIcon 2.01 - Modifying Options - Registering GrpIcon
+OK.12	37	; OK
+AssigningGroupIcons.13	8	; Assigning Group Icons
+SettingWallpaperBackground.14	10	; Setting Wallpaper Background
+ChangingBackgroundColorsinGroupWindows.15	11	; Changing Background Colors in Group Windows
+Inner.CitySoftwareIconLibrary.16	24	; Inner-City Software Icon Library
+HowtoRegister.17	13	; How to Register
+GrpIcon2.01RegistrationForm.18	40	; GrpIcon 2.01 Registration Form
+WhoWeAre.19	26	; Who We Are
+OtherInner.CitySoftwareProductOfferings.20	27	; Other Inner-City Software Product Offerings
+ProductCatalog.21	28	; Product Catalog
+MailingList.22	29	; Mailing List
+Inner.CitySoftware.sMissionandHowUCanHelp.23	30	; Inner-City Software's Mission and How U Can Help
+GlossaryOfTerms.24	32	; Glossary of Terms
+[CONFIG]
+BrowseButtons()
+CreateButton("jump_glossary","&Glossary","JumpId(`',`GlossaryOfTerms.24')")

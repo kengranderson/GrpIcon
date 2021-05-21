@@ -1,0 +1,30 @@
+[Application]
+AppName=GrpIcon 2.01 Setup
+DefDir=C:\INNRCITY
+SpaceNeeded=700
+DefPMGroup=INNRCITY.GRP, Inner-City Software
+
+[Disks]
+1=GrpIcon 2.01 Setup Diskette
+
+[Dirs]
+1=.
+
+[Files]
+GrpIcon Program,                            GrpIcon.ex_,    1,  1,  N
+GrpIcon Help File,                          GrpIcon.hl_,    1,  1,  Y
+Inner-City Software DLL File,               ICS.dl_,        1,  1,  Y
+Buttons and Cursors,                        bttncur.dl_,    1,  1,  Y
+Last Minute Errata,                         LastMin.txt,    1,  1,  N
+ICS Icon Library #1,                        ICSIcon.ex_,    1,  1,  N
+Readme File,                                README.TXT,     1,  1,  N
+GrpIcon History,                            HISTORY.TXT,    1,  1,  N
+
+[PM Info]
+GrpIcon.exe,    GrpIcon 2.01
+ICSIcon.exe,    ICS Icon Library #1
+Readme.txt,     Read Me First!
+History.txt,    GrpIcon History
+LastMin.txt,    Last Minute Errata
+
+[End]

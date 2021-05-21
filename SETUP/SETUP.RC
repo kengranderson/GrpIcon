@@ -1,0 +1,222 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "dialog.h"
+#include "\icsclass\iccustom.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BMP_BACKGROUND          BITMAP  PRELOAD FIXED PURE "/BITMAPS/BORDLG.BMP"
+BMP_GLOBE               BITMAP  MOVEABLE PURE   "/BITMAPS/ICSLOGO.BMP"
+BMP_YESNOCANCEL         BITMAP  MOVEABLE PURE   "/BITMAPS/YESNO.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDI_APP                 ICON    PRELOAD FIXED IMPURE "/ICONS/ICSLOGO.ICO"
+ICN_DISK                ICON    PRELOAD FIXED IMPURE "/grpicon/setup/DISK.ICO"
+IDI_WCK                 ICON    PRELOAD FIXED IMPURE "/grpicon/setup/WCK.ICO"
+IDI_MODICON             ICON    PRELOAD FIXED IMPURE "/grpicon/GRP31.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_INSERTDISK DIALOG PRELOAD FIXED PURE  40, 40, 192, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Caption"
+FONT 8, "Helv"
+BEGIN
+    ICON            ICN_DISK,ICN_DISK,4,4,16,16
+    LTEXT           "Setup needs the following disk:",-1,40,4,112,8,NOT 
+                    WS_GROUP
+    LTEXT           "Application Diskette",IDC_DISKNAME,40,12,112,12,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_SRCPATH,16,32,160,12,ES_UPPERCASE
+    DEFPUSHBUTTON   "&Ok",IDOK,48,52,32,16
+    PUSHBUTTON      "&Cancel",IDCANCEL,112,52,32,16
+END
+
+DLG_STATUS DIALOG PRELOAD DISCARDABLE  20, 20, 188, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Caption"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "",IDC_STATLINE1,4,4,184,8,NOT WS_GROUP
+    LTEXT           "",IDC_STATLINE2,4,16,184,12,NOT WS_GROUP
+    CONTROL         "",IDC_METER,"ICSmeter",WS_BORDER,16,28,156,12
+    CONTROL         "&Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,79,48,33,21
+END
+
+DLG_WELCOME DIALOG PRELOAD DISCARDABLE  32, 31, 289, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Caption"
+BEGIN
+    CONTROL         "",IDC_LOGOCANVAS,"ICSCanvas",0x2,8,8,129,105
+    CONTROL         "ICS Logo",IDC_LOGOBMP,"ICSStatic",0xd,25,30,95,60
+    CONTROL         "VertGroove",-1,"ICSCanvas",0x12,144,-2,4,121
+    CONTROL         "",IDC_WCKCANVAS,"ICSCanvas",0x2,154,8,126,51
+    CONTROL         "The Windows",IDC_WCK1,"ICSStatic",0x20,164,13,109,12
+    CONTROL         "Customization Kit",IDC_WCK2,"ICSStatic",0x20,194,31,80,
+                    12
+    CONTROL         "\251 1992 Inner-City Software",IDC_COPYRIGHT,
+                    "ICSStatic",0x1001,194,45,80,10
+    CONTROL         "IDI_WCK",IDI_WCK,"ICSStatic",0x3,164,31,16,16
+    CONTROL         "",IDC_APPCANVAS,"ICSCanvas",0x2,154,64,126,51
+    CONTROL         "Module 1:",IDC_MODULE,"ICSStatic",0x20,164,71,111,12
+    CONTROL         "GrpIcon 2.0",IDC_MODNAME,"ICSStatic",0x20,194,88,81,12
+    CONTROL         "IDI_MODICON",IDI_MODICON,"ICSStatic",0x3,164,88,16,16
+    CONTROL         "HorizGroove",-1,"ICSCanvas",0xa,0,119,289,4
+    CONTROL         "",IDC_DIRCANVAS,"ICSCanvas",0x2,8,128,274,57
+    CONTROL         "Setup will install the program(s) into the following directory on your hard disk.  If you want to install the application(s) in a different directory and/or drive, type the name of the directory below:",
+                    IDC_INSTRUCTIONS,"ICSStatic",0x1000,17,134,256,27
+    CONTROL         "Copy to:",IDC_COPYTO,"ICSStatic",0x0,82,167,32,12
+    EDITTEXT        IDC_DESTPATH,122,166,84,12,ES_UPPERCASE
+    CONTROL         "&OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    82,195,33,21
+    CONTROL         "&Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    173,195,33,21
+END
+
+GRPDLG DIALOG PRELOAD FIXED PURE  20, 18, 191, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Installation Group"
+BEGIN
+    LISTBOX         IDC_GRPLISTBOX,29,7,133,41,LBS_SORT | LBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select one of the Program Manager Groups listed above to install GrpIcon into that Group.\rThen click 'OK'.",
+                    -1,8,53,175,29
+    LTEXT           "Or, if you wish Setup to create a new Program Manager Group, click on the 'Create New Group'  button to continue.",
+                    -1,8,83,175,33
+    DEFPUSHBUTTON   "&OK",IDOK,8,118,67,14
+    PUSHBUTTON      "&Create New Group",IDC_NEWGROUP,115,118,67,14
+END
+
+NUDLG DIALOG PRELOAD FIXED PURE  44, 23, 142, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Group"
+BEGIN
+    EDITTEXT        IDC_NUGRP,21,15,99,12
+    LTEXT           "Enter the name of the new Program Manager Group.",-1,18,
+                    37,106,18
+    DEFPUSHBUTTON   "&OK",IDOK,11,65,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,81,65,50,14
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD FIXED PURE 
+BEGIN
+    IDS_NOMEMORY            "Insufficient memory to run Setup.\nClose some applications and try again."
+    IDS_NOSETUPINFOFILE     "The %s file cannot be found.\nPlease verify the distribution diskette."
+    IDS_NODISKSPACE         "Drive %c: contains %ldK of free disk space.\nSetup requires a minimum of %ldK.\nPlease select another drive."
+    IDS_CANTMAKEDIR         "The %s directory cannot be created.\nEnter another directory or try another drive."
+    IDS_QUERYABORT          "Setup has not completed installing the software.\nAre you sure you want to cancel?"
+    IDS_SETUPNOGOOD         "The software has not been successfully installed.\nYou must run Setup again before using the software."
+END
+
+STRINGTABLE PRELOAD FIXED PURE 
+BEGIN
+    IDS_PMADDOK             "Setup has installed the software successfully\nand added the application(s) to the Program Manager."
+    IDS_PMADDNOGOOD         "Setup has installed the software successfully\nbut could not add the application(s) to the Program Manager."
+    IDS_NOMEMORYCOPY        "Insufficient memory to copy file.\nClose another application or cancel Setup."
+    IDS_CANTOPENDST         "Cannot create destination file.\nTry again or cancel Setup."
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""dialog.h""\r\n"
+    "#include ""iccustom.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,1,0,0
+PRODUCTVERSION 1,1,0,0
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x1L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Inner-City Software\0"
+            VALUE "FileDescription", "Inner-City Software Setup Program\0"
+            VALUE "FileVersion", "1.01\0"
+            VALUE "InternalName", "SETUP.EXE\0"
+            VALUE "LegalCopyright", "Copyright \251 Inner-City Software 1992-1993\0"
+            VALUE "LegalTrademarks", "GrpIcon is a trademark of Inner-City Software - bite it and you will get smoked by the ghetto-style programmers!\0"
+            VALUE "OriginalFilename", "SETUP.EXE\0"
+            VALUE "ProductName", "GrpIcon\0"
+            VALUE "ProductVersion", "2.01\0"
+        END
+    END
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

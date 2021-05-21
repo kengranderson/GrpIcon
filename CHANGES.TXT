@@ -1,0 +1,11 @@
+4/23/92 Revision 1.03 - Major upgrade was taking too long, maintenance release
+			for 3.1.
+10/3/91 Revision 1.02 - Improved memory management - now uses only 17k RAM.
+                        Also closes dialog after icon is assigned.
+                        Made .INI file organization more logical.
+                        (INI file conversion program included.)
+                        Added Icon Manager (.ICL) and Norton Desktop Icon
+			Library (.NIL) support.  Changed default icon
+			file specification to '*.*'
+8/30/91 Revision 1.01 - Fixed problem if Program Manager not the Shell.
+8/18/91 Revision 1.00 - First release to the public.

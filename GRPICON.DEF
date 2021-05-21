@@ -1,0 +1,25 @@
+NAME    GrpIcon
+
+DESCRIPTION 'GrpIcon 2.01 © 1993 Inner-City Software'
+
+EXETYPE WINDOWS
+
+STUB    'WINSTUB.EXE'
+
+CODE    PRELOAD MOVEABLE
+DATA    PRELOAD MOVEABLE MULTIPLE
+
+HEAPSIZE    1024
+
+EXPORTS
+	Options					@1
+	SubclassPMGroup			@2
+	GetPMGroupEnumFunc		@3
+	PMGroup_NewWndProc		@4
+	RebuildPMGroupMenu		@5
+	SetColorHookProc		@6
+	SetWallPaperHookProc	@7
+	AssignIconHookProc		@8
+	Progman_NewWndProc		@9
+	Frame_WndProc			@10
+	

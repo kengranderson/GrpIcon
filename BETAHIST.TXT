@@ -1,0 +1,27 @@
+BETAHIST.TXT - HISTORY OF GRPICON 2.0 BETA CHANGES
+
+Outstanding issues:
+(256 color) Windows are painted twce when switching
+Switching away from Progman can trash 256 color bitmap display.
+
+04/05/92	Update 4 - Cleaned up more of the palette code.  Switching between two Groups both
+		containing 256 color images would not always cause a palette change, resulting in
+		incorrect colors.  Fixed a bug that caused the PMGroup menu to be damaged if a Group
+		was deleted.
+
+03/21/92	Update 3 - Program would crash if icon file had bad header information.  Made the
+		detection code a little smarter.  Also fixed a bug that would cause program to
+		incorrectly determine the number of colors in the palette when using a 32k or higher
+		color palette.
+
+03/19/92	Update 2 - Fixed problem that prevented you from creating new Groups while GI was
+		running (don't try it with earlier releases!)
+		Updated files for this release: GRPICON.EXE.
+
+03/18/92 	Update 1 - Made program start hidden, added 'Hide' menu option.  Changed one line
+		in icon recognition code that caused Norton Desktop .NIL files not to be recognized.
+		Fixed custom menu text problem.  Changes in system colors (i.e. Control Panel color
+		change) should work now.  GrpIcon menu options now work when a Group is maximized.
+		Updated files for this release: GRPICON.EXE, NWS.DLL.
+
+03/17/92	Initial Beta Release - See GIBETA.DOC/WRI for details.

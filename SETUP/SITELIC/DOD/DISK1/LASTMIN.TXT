@@ -1,0 +1,5 @@
+This file will contain any last-minute changes 
+that didn't get into the manual.
+
+-K.G.
+

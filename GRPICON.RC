@@ -1,0 +1,195 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "dlgs.h"
+#include "\icsdll\ics.h"
+#include "cpalette.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BMP_BACKGROUND          BITMAP  MOVEABLE PURE   "..\\BITMAPS\\BORDLG.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDI_GRP31               ICON    DISCARDABLE     "GRP31.ICO"
+IDI_GRP30               ICON    DISCARDABLE     "GRP30.ICO"
+IDI_XICON               ICON    DISCARDABLE     "XICON.ICO"
+ID_WALLPAPER            ICON    DISCARDABLE     "../ICONS/WPAPER.ICO"
+ID_SETCOLOR             ICON    DISCARDABLE     "../ICONS/PAINT_4.ICO"
+ID_ABOUT                ICON    DISCARDABLE     "../ICONS/ICSLOGO.ICO"
+ID_LOCK                 ICON    DISCARDABLE     "../ICONS/SECUR01A.ICO"
+ID_UNLOCK               ICON    DISCARDABLE     "../ICONS/SECUR01B.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOG DISCARDABLE  18, 18, 116, 157
+STYLE WS_CHILD | WS_VISIBLE
+BEGIN
+    COMBOBOX        IDC_ICONSIZE,9,18,97,90,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CURRENTFONT,9,60,63,18,ES_AUTOHSCROLL
+    CONTROL         "&Fonts",IDB_FONTS,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,76,58,33,21
+    CONTROL         "Start on &Windows Startup",IDC_AUTOSTART,"ICSCheck",
+                    WS_GROUP | WS_TABSTOP | 0x3,9,101,94,10
+    CONTROL         "&Preview Icons on Startup",IDC_PREVIEW,"ICSCheck",
+                    WS_TABSTOP | 0x3,9,112,94,10
+    CONTROL         "&OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    4,130,33,21
+    CONTROL         "&Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,41,
+                    130,33,21
+    CONTROL         "&Help",IDB_HELP,"Button",BS_OWNERDRAW | WS_TABSTOP,78,
+                    130,33,21
+    CONTROL         " &Icons in Group Menu:",-1,"ICSStatic",0x3000,4,5,107,9
+    CONTROL         "",-1,"ICSCanvas",0x2,4,16,107,25
+    CONTROL         "Group Menu Font:",-1,"ICSStatic",0x3000,4,45,107,10
+    CONTROL         "",-1,"ICSCanvas",0x2,4,55,107,28
+    CONTROL         "Startup Options:",-1,"ICSStatic",0x3000,4,88,107,10
+    CONTROL         "",-1,"ICSCanvas",0x2,4,99,107,24
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EMSDETECTED         "Real Mode EMS Detected!"
+    IDS_NOREALMODEEMS       "GrpIcon cannot run in Real Mode with Expanded Memory!"
+    IDS_APPNAME             "GrpIcon"
+    IDS_PROGMAN             "Progman"
+    IDS_INI                 "GRPICON.INI"
+    IDS_ICONDLGTITLE        "Assign Icon to Group '"
+    IDS_ICONFILESPECS       "#Icon Files#*.ico; *.exe; *.dll#Single Icon Files (*.ico)#*.ico#Program Files (*.exe)#*.exe#DLLs (*.dll)#*.dll#All Files (*.*)#*.*#"
+    IDS_BMPFILESPECS        "#Bitmap Files (*.bmp)#*.bmp#"
+    IDS_BMPDLGTITLE         "Set Wallpaper for Group '"
+    IDS_ICODIR              "Icon Dir"
+    IDS_BMPDIR              "WallPaper Dir"
+    IDS_CONFIG              "Config"
+    IDS_CLRDLGTITLE         "Set Color for Group '"
+    IDS_DLGAPPNAME          "GrpIcon 2.01"
+    IDS_DLGAPPDESC          "\251 1993 Inner-City Software (In Full Effect!)"
+    IDS_VERSION             "2.01"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROPERTIES           "Group &Properties..."
+    ID_ASSIGNICON           "Set &Icon..."
+    ID_SETCOLOR             "Set C&olor..."
+    ID_WALLPAPER            "Set &Wallpaper..."
+    ID_ABOUT                "A&bout GrpIcon..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VERSIONTAG          "Version"
+    IDS_REGNAMETAG          "Owner"
+    IDS_REGNUMTAG           "Number"
+    IDS_HELPFILE            "GRPICON.HLP"
+    IDS_PREVIEW             "Preview"
+    IDS_ICONSIZE            "IconSize"
+    IDS_MENUFONT            "MenuFont"
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "#include ""dlgs.h""\r\n"
+    "#include ""\\icsdll\\ics.h""\r\n"
+    "#include ""cpalette.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 2,1,0,0
+PRODUCTVERSION 2,1,0,0
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x1L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Inner-City Software\0"
+            VALUE "FileDescription", "GrpIcon - Predecessor to Program Manager's Assistant\0"
+            VALUE "FileVersion", "2.01\0"
+            VALUE "InternalName", "GRPICON.EXE\0"
+            VALUE "LegalCopyright", "Copyright \251 Inner-City Software 1991-1993\0"
+            VALUE "LegalTrademarks", "GrpIcon is a trademark of Inner-City Software - bite it and you will get smoked by the ghetto-style programmers!\0"
+            VALUE "OriginalFilename", "GRPICON.EXE\0"
+            VALUE "ProductName", "GrpIcon\0"
+            VALUE "ProductVersion", "2.01\0"
+        END
+    END
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

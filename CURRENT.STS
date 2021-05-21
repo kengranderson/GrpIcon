@@ -1,0 +1,19 @@
+[shared-]
+	pmark=
+	mark=cvw "n:\nwsdll\nws.c" 422 1 'E "nws.c"!.422
+	mark=cvw "n:\nwsdll\nws.c" 357 1 'E "nws.c"!.357
+	version=2
+[debug-]
+	target="n:\grpicon\grpicon.exe"
+[cvw]
+	wndstate=0 2 0 1 0 1 0 0 0 0 254
+	tilestate=1 24 0 80 0 0 0 0 0 12 0 20 0 0 21 0 0 254
+	command=use auto
+	command=n10
+	command=ss1
+	command=oc+
+	command=of-
+	command=o3-
+	command=#4
+	execheck=GrpIcon 706430168
+	execheck=NWS 706349258

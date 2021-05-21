@@ -1,0 +1,11 @@
+GRPDLG DIALOG PRELOAD FIXED 20, 18, 191, 139
+CAPTION "Select Installation Group"
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+	CONTROL "Groups", IDC_GRPLISTBOX, "LISTBOX", LBS_STANDARD | LBS_HASSTRINGS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 29, 7, 133, 41
+	LTEXT "Select one of the Program Manager Groups listed above to install GrpIcon into that Group.\015Then click 'OK'.", -1, 8, 53, 175, 29, WS_CHILD | WS_VISIBLE | WS_GROUP
+	LTEXT "Or, if you wish Setup to create a new Program Manager Group, click on the 'Create New Group'  button to continue.", -1, 8, 83, 175, 33, WS_CHILD | WS_VISIBLE | WS_GROUP
+	DEFPUSHBUTTON "&OK", IDOK, 8, 118, 67, 14, WS_CHILD | WS_VISIBLE | WS_TABSTOP
+	PUSHBUTTON "&Create New Group", IDC_NEWGROUP, 115, 118, 67, 14, WS_CHILD | WS_VISIBLE | WS_TABSTOP
+END
+

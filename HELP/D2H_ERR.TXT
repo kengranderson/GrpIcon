@@ -1,0 +1,17 @@
+                          Doc-To-Help Error Report
+                          ------------------------
+
+                 File: GRPICON.DOC
+
+                 Date: 03/31/93  11:24 PM
+
+Validations Performed: Invalid Heading paragraphs
+                       Invalid Master Document structure
+                       Unsupported Symbols
+                       Unsupported Graphics
+                       Invalid cross references or Related Help Topics
+                       Invalid Caption links
+                       Index not finalized
+
+-----------------------------------------------------------------------
+

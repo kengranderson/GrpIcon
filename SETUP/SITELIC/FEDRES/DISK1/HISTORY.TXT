@@ -1,0 +1,50 @@
+GRPICON HISTORY
+
+??/??/93 - Release 2.1
+	New features that will blow your mind are in
+	the works!  Register now and get on the mailing
+	list so you will know when it hits!
+	Send $20 to the address in the About Box and register TODAY!
+
+*** THIS IS THE ONE YOU GOT ***
+04/10/93 - Release 2.01 (2:01am timestamp)
+	Added compatibility with Norton Desktop 2.0.
+	Also fixed a bug where GrpIcon sometimes wouldn't recognize
+	long Group capttions.  Recompiled with MS Visual C++ and 
+	saved a few bytes.  Added Version information in EXEs.
+	Added confirmation of correct Registration Number and
+	immediate display of Registered User Name after registration.
+
+10/11/92 - Release 2.0 (2:01am timestamp)
+	2:00am release didn't save some settings.  This one
+	does.
+
+10/11/92 - Release 2.0 (2:00am timestamp)
+	Major upgrade finally released - uses 3d buttons,
+	icons in menus, customized Common Dialogs, revamped
+	interface, changes Group background colors or puts
+	wallpaper in Group background, has Windows-based
+	Setup, 100-icon drag-and-drop icon library, on-line
+	Help.
+	
+04/23/92 - Release 1.03
+	Major upgrade was taking too long to finish, 
+	just a maintenance release for Windows 3.1.
+
+10/03/91 - Release 1.02
+	Improved memory management - now uses only 17k RAM.
+	Also closes dialog after icon is assigned.
+	Made .INI file organization more logical.
+	(INI file conversion program included.)
+	Added Icon Manager (.ICL) and Norton Desktop Icon
+	Library (.NIL) support.  Changed default icon
+	file specification to '*.*'  Also added keyboard
+	accelerators for the Next/Prev Icon buttons.
+
+08/30/91 - Release 1.01
+	Fixed problems encountered when Program Manager was not the
+	shell and when Group titles were changed.
+
+08/18/91 - Release 1.0
+	GrpIcon hits the street.
+

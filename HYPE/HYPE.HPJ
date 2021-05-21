@@ -1,0 +1,19 @@
+[OPTIONS]
+ERRORLOG=F:\GRPICON\HYPE\HYPE.err
+CONTENTS=HelpContents1
+ROOT=F:\GRPICON\HYPE
+COMPRESS=FALSE
+TITLE=Announcing GrpIcon
+BMROOT=F:\GRPICON\HYPE\BITMAPS
+REPORT=ON
+COPYRIGHT=© 1992 Inner-City Software
+[FILES]
+HYPE.RTF
+[MAP]
+HelpContents1	1	; Help Contents
+TheGroupIconCustomizer.2	2	; The Group Icon Customizer
+byInner.CitySoftware.3	3	; by Inner-City Software
+.bmchelp0004.bmp..4	4	; {bmc help0004.bmp}
+.bmchelp0005.bmp..5	5	; {bmc help0005.bmp}
+[CONFIG]
+BrowseButtons()
